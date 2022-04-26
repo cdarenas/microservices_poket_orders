@@ -35,7 +35,7 @@ El objetivo de esta PoC es separar de la actual arquitectura monolítica el mode
 # Como correr el Landscape de Microservicios en tu ambiente local con Docker
 1. ./gradlew build -x test  && docker-compose build
 2. docker-compose up -d
-3. Get Authentication Token: curl -k https://writer:secret@localhost:8443/oauth2/token -d grant_type=client_credentials -s | jq .
+3. Get Authentication Token: curl -k http://writer:secret@localhost:8443/oauth2/token -d grant_type=client_credentials -s | jq .
 
 # Pasos siguientes
 Una vez que el landscape de microservicios está corriendo, podemos obtener un Bearer Token par poder autenticarse.
