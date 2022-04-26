@@ -1,19 +1,18 @@
-# microservices_poket_orders
+# Arquitectura Microservicios - Modelo Ordenes
 
-# Introduction 
-Este proyecto fue creado como Proof of concept para la migracion a microservicios del modelo Orders en Poket
+# Introducción 
+Este proyecto fue creado como Proof of concept para la migración a microservicios del modelo Orders en Poket
 Autor: Cristian Daniel Arenas - Development Manager
 
 El objetivo de esta PoC es separar de la actual arquitectura monolítica el modelo involucrado en el procesamiento de órdenes de compra/venta de activos bursátiles. Esta PoC propone desacoplar parte del modelo de negocio, permitiendo que la API de Poket sea totalmente agnóstica a cuestiones relacionadas con el procesamiento y ejecución de órdenes y la integración con Interactive Brokers.
 
-Beneficios:
-
-*Escalabilidad
-*Mejor tolerancia a fallos
-*Tracing distribuido y completo de todos los flujos de comunicación
-*Servicios Reactivos
-*Mantenimiento y despliegue independientes
-*Simplicidad en el manteniemiento y extensión del sistema
+# Beneficios 
+1.  Escalabilidad
+2.  Mejor tolerancia a fallos
+3.  Tracing distribuido y completo de todos los flujos de comunicación
+4.  Servicios Reactivos
+5.  Mantenimiento y despliegue independientes
+6.  Simplicidad en el manteniemiento y extensión del sistema
 
 ![Alt text](https://github.com/cdarenas/microservices_poket_orders/blob/main/Poket%20IB%20Microservices.drawio.png?raw=true "Microservicios - Modelo Ordenes")
 
