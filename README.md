@@ -16,7 +16,11 @@ El objetivo de esta PoC es separar de la actual arquitectura monolítica el mode
 5.  Mantenimiento y despliegue independientes
 6.  Simplicidad en el manteniemiento y extensión del sistema
 
+
+
 ![Alt text](https://github.com/cdarenas/microservices_poket_orders/blob/main/Poket%20IB%20Microservices.drawio.png?raw=true "Microservicios - Modelo Ordenes")
+
+
 
 # Tecnologías utilizadas
 1. Java
