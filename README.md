@@ -2,7 +2,9 @@
 
 # Introducción 
 Este proyecto fue creado como Proof of concept para la migración a microservicios del modelo Orders en Poket
-Autor: Cristian Daniel Arenas - Development Manager
+
+# Autor 
+Autor: Cristian Daniel Arenas - Development Manager en Poket LLC
 
 El objetivo de esta PoC es separar de la actual arquitectura monolítica el modelo involucrado en el procesamiento de órdenes de compra/venta de activos bursátiles. Esta PoC propone desacoplar parte del modelo de negocio, permitiendo que la API de Poket sea totalmente agnóstica a cuestiones relacionadas con el procesamiento y ejecución de órdenes y la integración con Interactive Brokers.
 
@@ -16,20 +18,32 @@ El objetivo de esta PoC es separar de la actual arquitectura monolítica el mode
 
 ![Alt text](https://github.com/cdarenas/microservices_poket_orders/blob/main/Poket%20IB%20Microservices.drawio.png?raw=true "Microservicios - Modelo Ordenes")
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+# Tecnologías utilizadas
+1. Java
+2. Spring Boot
+3. Spring Cloud
+4. Eureka Netflix
+5. Spring Cloud Gateway
+6. ELK Stack
+7. MongoDb
+8. MySQL
+9. Spring Security OAuth
+10. RabbitMQ
+11. Docker
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+# Como correr el Landscape de Microservicios en tu ambiente local con Docker
+1. ./gradlew build -x test  && docker-compose build
+2. docker-compose up -d
+3. Get Authentication Token: curl -k https://writer:secret@localhost:8443/oauth2/token -d grant_type=client_credentials -s | jq .
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+# Pasos siguientes
+Una vez que el landscape de microservicios está corriendo, podemos obtener un Bearer Token par poder autenticarse.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+# URLs importantes para acceder localmente
+Netflix Service Discovery: http://localhost:8443/eureka/web
+Swagger http://localhost:8443/openapi/webjars/swagger-ui/index.html
+RabbitMQ http://localhost:15672/#/
+
+
+
+
