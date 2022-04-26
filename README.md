@@ -45,6 +45,10 @@ Una vez que el landscape de microservicios está corriendo, podemos obtener un B
 2.  Swagger http://localhost:8443/openapi/webjars/swagger-ui/index.html
 3.  RabbitMQ http://localhost:15672/#/
 
+# Pendientes
+1. Implementar SSL
+2. Implementar Patrón de Arquitectura CQRS con MediatoR
+
 
 
 
