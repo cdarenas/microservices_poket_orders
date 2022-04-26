@@ -30,6 +30,7 @@ El objetivo de esta PoC es separar de la actual arquitectura monolítica el mode
 9. Spring Security OAuth
 10. RabbitMQ
 11. Docker
+12. IB Gateway de Interactive Brokers
 
 # Como correr el Landscape de Microservicios en tu ambiente local con Docker
 1. ./gradlew build -x test  && docker-compose build
@@ -40,9 +41,9 @@ El objetivo de esta PoC es separar de la actual arquitectura monolítica el mode
 Una vez que el landscape de microservicios está corriendo, podemos obtener un Bearer Token par poder autenticarse.
 
 # URLs importantes para acceder localmente
-Netflix Service Discovery: http://localhost:8443/eureka/web
-Swagger http://localhost:8443/openapi/webjars/swagger-ui/index.html
-RabbitMQ http://localhost:15672/#/
+1.  Netflix Service Discovery: http://localhost:8443/eureka/web
+2.  Swagger http://localhost:8443/openapi/webjars/swagger-ui/index.html
+3.  RabbitMQ http://localhost:15672/#/
 
 
 
