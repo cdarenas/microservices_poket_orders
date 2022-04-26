@@ -1,0 +1,7 @@
+include ':api'
+include ':util'
+include ':microservices:order-service'
+include ':microservices:portfolio-service'
+include ':microservices:order-composite-service'
+include ':spring-cloud:eureka-server'
+include ':spring-cloud:gateway'
